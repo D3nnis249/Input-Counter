@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+    <title>Input Counter</title>
+  </head>
+  <header><h1>Input-Counter</h1></header>
+  <body>
+    <h2>Question:<span id="charCount"></span></h2>
+    <textarea
+      onfocus="this.value=''"
+      id="textBoxOne"
+      placeholder="Type yout text here..."
+      onkeyup="charCount(this.value)"
+    ></textarea>
+
+    <h2>Answer: <span id="charCountTwo"></span></h2>
+    <textarea
+      onfocus="this.value=''"
+      id="textBoxTwo"
+      placeholder="Type yout text here..."
+      onkeyup="charCountAnswer(this.value)"
+    ></textarea>
+
+    <h2>Tags, comma seperated: <span id="charCountThree"></span></h2>
+    <textarea
+      onfocus="this.value=''"
+      id="textBoxThree"
+      placeholder="Type yout text here..."
+      onkeyup="charCountTags(this.value)"
+    ></textarea>
+  </body>
+</html>
